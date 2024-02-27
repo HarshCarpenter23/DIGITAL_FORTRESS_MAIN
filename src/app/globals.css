@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(œ
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.shadow-services {
+  box-shadow: 
+  40px 40px 50px 0px rgba(225, 225, 230, 0.8),
+  0px 0px 50px 0px rgba(217, 217, 217, 0.2) inset,
+  -40px -40px 80px 0px rgba(255, 255, 255, 0.8);
+}
+
+.scramble-text {
+  display: inline-block;
+  animation: scramble 0.3s infinite alternate;
+}
+
+.svg-tick {
+  animation: bounceIn 3s linear infinite;
+    animation-delay: 0.1s;
+}
+
+
+
+@keyframes bounceIn {
+  0% { opacity: 1; } 
+  50% { opacity: 0; } 
+  100% { opacity: 1; } 
+}
+
+@keyframes scramble {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0.1em);
+  }
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("/fonts/helvetica-now-display.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("/fonts/helvetica-now-display-bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
