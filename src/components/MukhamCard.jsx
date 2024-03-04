@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Iphone from "@/images/iphones.svg";
+import Iphone from "@/images/mukham-main.png";
 import { FadeIn } from "./FadeIn";
 
 export function MukhamCard() {

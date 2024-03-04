@@ -43,6 +43,18 @@ body {
     animation-delay: 0.1s;
 }
 
+.svg-tick-two {
+  animation: bounceInTwo 4s linear infinite;
+  animation-delay: 0.1s;
+}
+
+
+@keyframes bounceInTwo {
+  0% { opacity: 0; } 
+  50% { opacity: 1; } 
+  100% { opacity: 0; } 
+}
+
 
 
 @keyframes bounceIn {

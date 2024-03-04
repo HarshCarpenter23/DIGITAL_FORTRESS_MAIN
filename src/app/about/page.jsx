@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import AboutImg1 from "@/images/about-1.svg";
-import AboutImg2 from "@/images/about-2.svg";
-import AboutImg3 from "@/images/about-3.svg";
-import AboutImg4 from "@/images/about-4.svg";
+import MukhamImg from "@/images/attendance.png";
+import AboutImg2 from "@/images/about2.png";
+import AboutImg3 from "@/images/about3.png";
+import AboutImg4 from "@/images/about4.png";
 import AboutImgMain from "@/images/about-main.svg";
 import { PageIntro } from "@/components/PageIntro";
 import { StatList, StatListItem } from "@/components/StatList";
@@ -51,27 +51,30 @@ function About() {
       <Container className="mt-16">
         <div className="flex md:flex-row flex-col items-center justify-center gap-6 md:gap-9">
           <Image
-            src={AboutImg1}
-            width={200}
-            height={350}
+            src={MukhamImg}
+            width={400}
+            height={470}
           />
 
           <Image
+            className="mt-4"
             src={AboutImg2}
-            width={200}
-            height={350}
+            width={380}
+            height={430}
           />
 
           <Image
+            className="mt-4"
             src={AboutImg3}
-            width={200}
-            height={350}
+            width={400}
+            height={430}
           />
 
           <Image
+            className="mt-4"
             src={AboutImg4}
-            width={200}
-            height={350}
+            width={380}
+            height={450}
           />
         </div>
       </Container>
@@ -80,10 +83,10 @@ function About() {
         <div className="md:w-[800px] w-[450px] flex flex-col gap-5 items-center justify-center">
           <div className="flex items-center justify-center h-[240px] gap-5 md:w-[800px] w-[450px]">
             <FadeIn className="flex flex-col gap-5">
-              <div className="flex items-center justify-center flex-1 rounded bg-[#E5E5E5] md:w-[300px] w-[140px] md:py-0 py-8">
+              <div className="flex items-center justify-center flex-1 rounded bg-[#E5E5E5] md:w-[300px] w-[140px] h-[110px] py-8">
                 <h3 className="md:text-3xl text-xl">Our Mission</h3>
               </div>
-              <div className="flex items-center justify-center flex-1 rounded bg-[#E5E5E5] md:w-[300px] w-[140px] md:py-0 py-8">
+              <div className="flex items-center justify-center flex-1 rounded bg-[#E5E5E5] md:w-[300px] w-[140px] h-[110px] py-8">
                 <h3 className="md:text-3xl text-xl">Our Vision</h3>
               </div>
             </FadeIn>

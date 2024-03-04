@@ -48,6 +48,7 @@ function Header({
 }) {
   let { logoHovered, setLogoHovered } = useContext(RootLayoutContext);
 
+
   return (
     <Container>
       <div className="flex items-center justify-between">
@@ -117,11 +118,20 @@ function NavigationRow({ children }) {
   );
 }
 
-function NavigationItem({ href, children }) {
+function NavigationItem({ href, children, onClick }) {
+  const handleClick = () => {
+    // Check if the onClick function is provided and call it
+    if (onClick) {
+      onClick();
+    }
+  };
+
+
   return (
     <Link
       href={href}
       className="group relative isolate -mx-6 bg-neutral-950 px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
+      onClick={handleClick}
     >
       {children}
       <span className="absolute inset-y-0 -z-10 w-screen bg-neutral-900 opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
@@ -130,8 +140,12 @@ function NavigationItem({ href, children }) {
 }
 
 function Navigation({onToggle}) {
+  // const handleToggle = (event) => {
+  //   event.preventDefault(); // Prevent default behavior
+  //   onToggle(); // Call onToggle function provided by props
+  // };
   return (
-    <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
+    <nav className="mt-px font-display text-3xl font-medium tracking-tight text-white">
       <NavigationRow>
         <NavigationItem href="/" onClick={onToggle}>
           Home

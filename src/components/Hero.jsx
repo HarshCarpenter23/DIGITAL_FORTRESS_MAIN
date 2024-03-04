@@ -2,15 +2,21 @@ import React from 'react'
 import Image from "next/image";
 import Placeholder from "../images/cardimg.png";
 import { MukhamCard } from './MukhamCard';
+import DeepTechImg from '@/images/Deeptech.png';
+
+import FidoImg from '@/images/FIDO_Alliance_logo.png';
+import CSAImg from '@/images/DIGITAL-FORTRESS-CSA.png';
+import TrophyImg from '@/images/trophy.svg';
 
 function Hero() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-5 lg:p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-5 lg:p-24 mt-16 md:mt-0">
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-6 w-full mb-[70px]">
         <div className=" rounded-lg lg:col-span-2">
           <h2 className="text-2xl lg:text-6xl font-bold mt-2">
             Protect Your Digital World with Passwordless Authentication.
           </h2>
+          <h2 className="text-xl text-orange-400 lg:text-4xl font-bold mt-2">"Experience Our Award Winning Product"</h2>
         </div>
 
         
@@ -66,13 +72,37 @@ function Hero() {
         >
           <li className=" rounded-3xl">
             <Image
-              src={Placeholder}
+              src={DeepTechImg}
               width={400}
               height={300}
               className=" rounded-3xl  lg:h-full lg:w-80 h-80 w-60"
             />
           </li>
           <li className=" rounded-3xl">
+            <Image
+              src={FidoImg}
+              width={400}
+              height={300}
+              className=" rounded-3xl  lg:h-full lg:w-80 h-80 w-60"
+            />
+          </li>
+          <li className=" rounded-3xl">
+            <Image
+              src={CSAImg}
+              width={400}
+              height={300}
+              className=" rounded-3xl  lg:h-full lg:w-80 h-80 w-60"
+            />
+          </li>
+          <li className=" rounded-3xl">
+            <Image
+              src={TrophyImg}
+              width={400}
+              height={300}
+              className=" rounded-3xl  lg:h-90 lg:w-80 h-80 w-60"
+            />
+          </li>
+          {/* <li className=" rounded-3xl">
             <Image
               src={Placeholder}
               width={400}
@@ -103,31 +133,7 @@ function Hero() {
               height={300}
               className=" rounded-3xl  lg:h-full lg:w-80 h-80 w-60"
             />
-          </li>
-          <li className=" rounded-3xl">
-            <Image
-              src={Placeholder}
-              width={400}
-              height={300}
-              className=" rounded-3xl  lg:h-full lg:w-80 h-80 w-60"
-            />
-          </li>
-          <li className=" rounded-3xl">
-            <Image
-              src={Placeholder}
-              width={400}
-              height={300}
-              className=" rounded-3xl  lg:h-full lg:w-80 h-80 w-60"
-            />
-          </li>
-          <li className=" rounded-3xl">
-            <Image
-              src={Placeholder}
-              width={400}
-              height={300}
-              className=" rounded-3xl  lg:h-full lg:w-80 h-80 w-60"
-            />
-          </li>
+          </li> */}
         </ul>
       </div>
 
