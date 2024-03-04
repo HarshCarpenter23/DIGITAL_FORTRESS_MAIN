@@ -16,7 +16,7 @@ function Hero() {
           <h2 className="text-2xl lg:text-6xl font-bold mt-2">
             Protect Your Digital World with Passwordless Authentication.
           </h2>
-          <h2 className="text-xl text-orange-400 lg:text-4xl font-bold mt-2">"Experience Our Award Winning Product"</h2>
+          <h2 className="text-xl text-orange-400 lg:text-4xl font-bold mt-2">&quot;Experience Our Award Winning Product&quot;</h2>
         </div>
 
         
