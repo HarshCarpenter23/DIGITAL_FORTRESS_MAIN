@@ -80,22 +80,23 @@ function Product() {
                 <Image
                   src={AttendanceImg} // Path to your image
                   alt="Description of the image"
-                  width={400} // Desired width of the image
-                  height={600} // Desired height of the image
+                  width={200} // Desired width of the image
+                  height={300} // Desired height of the image
+                  className="shadow-lg"
                 />
               </FadeIn>
             </div>
           </Container>
 
           <Container className="md:mt-16">
-            <FadeIn className="flex flex-col items-center justify-center md:flex-row md:gap-9 gap-1">
+            <FadeIn className="flex flex-col items-center justify-center md:flex-row md:gap-[50px] gap-1">
               <div className="w-[400px] md:w-[500px]">
-                {/* <MAuthSvg/> */}
+                
                 <Image
                   src={MauthIMG} // Path to your image
                   alt="Description of the image"
-                  width={900} // Desired width of the image
-                  height={900} // Desired height of the image
+                  width={600} // Desired width of the image
+                  height={500} // Desired height of the image
                 />
               </div>
               <div className="md:w-[600px] w-full">
@@ -154,7 +155,7 @@ function Product() {
 
           </Container>
 
-          {/* <Container className="mt-16">
+          <Container className="mt-16">
             <FadeIn className="flex flex-col items-center justify-center md:flex-row gap-6">
               <div className="md:w-[600px] w-full">
                 <h3 className="text-5xl font-bold">mIsolate</h3>
@@ -200,15 +201,16 @@ function Product() {
                 </div>
               </div>
               <div>
-                <Image
+                {/* <Image
                   src={MukhamUI} // Path to your image
                   alt="Description of the image"
                   width={900} // Desired width of the image
                   height={900} // Desired height of the image
-                />
+                /> */}
+                <MAuthSvg/>
               </div>
             </FadeIn>
-          </Container> */}
+          </Container>
 
           {/* <Container className="mt-16">
             <FadeIn className="flex flex-col items-center justify-center md:flex-row gap-6">

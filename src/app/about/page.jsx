@@ -4,7 +4,7 @@ import MukhamImg from "@/images/attendance.png";
 import AboutImg2 from "@/images/about2.png";
 import AboutImg3 from "@/images/about3.png";
 import AboutImg4 from "@/images/about4.png";
-import AboutImgMain from "@/images/about-main.svg";
+import AboutImgMain from "@/images/story.png";
 import { PageIntro } from "@/components/PageIntro";
 import { StatList, StatListItem } from "@/components/StatList";
 import imageWhitneyFrancis from "@/images/team/whitney-francis.jpeg";
@@ -51,67 +51,69 @@ function About() {
       <Container className="mt-16">
         <div className="flex md:flex-row flex-col items-center justify-center gap-6 md:gap-9">
           <Image
+            className="mt-4"
             src={MukhamImg}
-            width={400}
-            height={470}
+            width={200}
+            height={300}
           />
 
           <Image
             className="mt-4"
             src={AboutImg2}
-            width={380}
-            height={430}
+            width={200}
+            height={300}
           />
 
           <Image
             className="mt-4"
             src={AboutImg3}
-            width={400}
-            height={430}
+            width={200}
+            height={300}
           />
 
           <Image
             className="mt-4"
             src={AboutImg4}
-            width={380}
-            height={450}
+            width={200}
+            height={300}
           />
         </div>
       </Container>
       
       <Container className="mt-16 flex items-center justify-center">
-        <div className="md:w-[800px] w-[450px] flex flex-col gap-5 items-center justify-center">
-          <div className="flex items-center justify-center h-[240px] gap-5 md:w-[800px] w-[450px]">
+        <div className="md:w-[900px] w-[450px] flex flex-col gap-5 items-center justify-center">
+          <div className="flex items-center justify-center h-[220px] gap-5 md:w-[900px] w-[500px]">
             <FadeIn className="flex flex-col gap-5">
-              <div className="flex items-center justify-center flex-1 rounded bg-[#E5E5E5] md:w-[300px] w-[140px] h-[110px] py-8">
+              <div className="flex items-center justify-center flex-1 rounded bg-[#E5E5E5] md:w-[310px] w-[180px] h-[150px] py-8">
                 <h3 className="md:text-3xl text-xl">Our Mission</h3>
               </div>
-              <div className="flex items-center justify-center flex-1 rounded bg-[#E5E5E5] md:w-[300px] w-[140px] h-[110px] py-8">
+              <div className="flex items-center justify-center flex-1 rounded bg-[#E5E5E5] md:w-[310px] w-[180px] h-[150px] py-8">
                 <h3 className="md:text-3xl text-xl">Our Vision</h3>
               </div>
             </FadeIn>
-            <FadeIn className="flex items-center justify-center px-6 rounded bg-orange-400 md:h-full h-[210px] md:w-[600px] w-[170px]">
+            <FadeIn className="flex items-center justify-center px-6 rounded bg-orange-400 md:h-[240px] h-[200px] md:w-[600px] w-[170px]">
               <h3 className="text-5xl font-bold text-center">Our Story</h3>
             </FadeIn>
           </div>
 
-          <div className="flex gap-5">
-            <div className="md:w-[550px] w-[327px] bg-[#E5E5E5] p-6 rounded">
+          <div className="flex gap-5 md:w-[900px] w-[400px]">
+            <div className="md:w-[550px] md:h-[700px] h-[920px] w-[400px] bg-[#E5E5E5] p-6 rounded">
               <h3 className="text-3xl">Our Story</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, asperiores nulla odit laboriosam at voluptate odio amet? Eum minus itaque quos numquam inventore, minima consectetur voluptatem possimus eius amet incidunt aperiam porro aspernatur fugiat repellendus, suscipit dignissimos ex? Nulla, eveniet? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus culpa nesciunt ad maiores illum architecto sed. Quam impedit facere, laborum beatae fugiat alias maiores natus expedita ullam, asperiores autem recusandae.</p>
+              <p>Our company, DigitalFortress Private Limited, is poised for substantial growth due to the innovative and high-impact nature of our products, MAuthN and Mukham. MAuthN introduces a revolutionary approach to authentication by eliminating traditional passwords and implementing passwordless multi-factor authentication. It ensures robust identity verification through advanced cryptographic techniques, device attestation, and biometrics, thereby mitigating cyber threats and unauthorized access. Mukham, on the other hand, offers state-of-the-art employee monitoring, streamlining workforce management with features such as facial recognition-based attendance tracking, geo-fencing, an anti-spoofing module, and an AI secretary. The compelling reasons behind our company's high growth potential lie in the fact that both products directly address pressing market demands, such as enhanced cybersecurity and operational efficiency, while ensuring a user-friendly experience. Our adaptability to emerging technologies, comprehensive control, data-driven insights, and competitive advantages further bolster our position in the market, making us the preferred choice for businesses across various industries. We are confident that our commitment to innovation and security will continue to drive our growth and success in the digital realm</p>
             </div>
-            <div className="w-[250px] md:block hidden">
+            <div className="w-[365px] h-[700px] md:block hidden">
               <Image
+              className="rounded"
               src={AboutImgMain}
-              width={250}
-              height={300}
+              width={365}
+              height={700}
               />
             </div>
           </div>
         </div>
       </Container>
 
-      <Team />
+      {/* <Team /> */} 
     </div>
   );
 }
