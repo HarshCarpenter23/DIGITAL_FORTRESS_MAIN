@@ -6,6 +6,7 @@ export default function Layout({ children }) {
     <html lang="en" className="h-full bg-neutral-950 text-base antialiased">
       <head>
         <link rel="icon" href="src/app/favicon.ico" />
+        <title>Digital Fortress</title>
       </head>
       <body className="flex min-h-full flex-col text-black">
         <RootLayout>{children}</RootLayout>
