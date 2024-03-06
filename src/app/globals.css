@@ -48,6 +48,9 @@ body {
   animation-delay: 0.1s;
 }
 
+.bg-ring {
+  background: url(../images/bg-ring.gif) center no-repeat;
+}
 
 @keyframes bounceInTwo {
   0% { opacity: 0; } 

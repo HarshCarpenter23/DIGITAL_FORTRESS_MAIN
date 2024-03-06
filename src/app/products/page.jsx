@@ -9,6 +9,7 @@ import { FadeIn } from "@/components/FadeIn";
 import AttendanceImg from '@/images/attendance.png';
 import RightImg from '@/images/right-vector.svg';
 
+
 function Product() {
     return (
         <>
@@ -87,6 +88,8 @@ function Product() {
               </FadeIn>
             </div>
           </Container>
+
+          
 
           <Container className="md:mt-16">
             <FadeIn className="flex flex-col items-center justify-center md:flex-row md:gap-[50px] gap-1">

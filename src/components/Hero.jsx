@@ -10,6 +10,11 @@ import DeepTechImg from '@/images/Deeptech.png';
 import FidoImg from '@/images/FIDO_Alliance_logo.png';
 import CSAImg from '@/images/DIGITAL-FORTRESS-CSA.png';
 import TrophyImg from '@/images/trophy.svg';
+import FaceInfoImg from '@/images/about-1.jpg';
+import FaceInfo2Img from '@/images/about-2.jpg';
+import { Container } from './Container';
+import { FadeIn } from './FadeIn';
+
 
 function Hero() {
   return (
@@ -165,6 +170,33 @@ function Hero() {
         <MukhamCard/>
 
       </div>
+
+      <Container className="mt-16 ">
+        <FadeIn className="flex md:flex-row flex-col gap-7 items-center">
+          <div className="flex-1">
+            <p className='text-lg'>There are 80 distinguishable features on a human face, which are translated into a unique code to represent individual features. This code serves as a facial signature that can be used for identification. Facial recognition technology measures various facial curves on a micro scale, comparing these details to other facial signatures in a database to match and identify a person. Therefore, through the process of translating unique facial features into a code and matching it with other facial signatures, facial recognition technology is able to recognize and identify individuals.</p>
+          </div>
+          <div className=' flex md:flex-row flex-col gap-7 bg-ring'>
+          <div>
+              <Image
+                src={FaceInfo2Img}
+                className='h-[350px] rounded '
+                width={350}
+                height={350}
+              />
+            </div>
+
+            <div>
+              <Image
+                src={FaceInfoImg}
+                className='h-[350px] rounded  md:mt-[100px]'
+                width={350}
+                height={350}
+              />
+            </div>
+          </div>
+          </FadeIn>
+        </Container>
       
 
     </main>
