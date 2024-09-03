@@ -59,7 +59,7 @@ function Header({
           onMouseLeave={() => setLogoHovered(false)}
         >
           <Logomark
-            className="h-8 sm:hidden"
+            className="h-1 sm:hidden"
             invert={invert}
             filled={logoHovered}
           />
@@ -69,7 +69,7 @@ function Header({
             filled={logoHovered}
           />
         </Link>
-        <div className="flex items-center gap-x-8">
+        <div className="flex items-center gap-x-6">
           <Button
             href="/contact"
             invert={invert}

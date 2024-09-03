@@ -50,7 +50,7 @@ function Hero() {
             remembering passwords and protect your digital identity with ease.
           </p>
           <br />
-          <a href="#" className="text-black underline flex text-xl">
+          <a href="/products" className="text-black underline flex text-xl">
             Get Started{" "}
             <svg
               width="24"
@@ -79,85 +79,54 @@ function Hero() {
           </a>
         </div>
       </div>
+
       <div
-        x-data="{}"
-        x-init="$nextTick(() => {
-          let ul = $refs.logos;
-          ul.insertAdjacentHTML('afterend', ul.outerHTML);
-          ul.nextSibling.setAttribute('aria-hidden', 'true');
-        })"
-        className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
-      >
-        <ul
-          x-ref="logos"
-          className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll h-[500px]"
-        >
-          <li className=" rounded-3xl">
-            <Image
-              src={DeepTechImg}
-              width={400}
-              height={300}
-              className=" rounded-3xl  lg:h-full lg:w-80 h-80 w-60"
-            />
-          </li>
-          <li className=" rounded-3xl">
-            <Image
-              src={FidoImg}
-              width={400}
-              height={300}
-              className=" rounded-3xl  lg:h-full lg:w-80 h-80 w-60"
-            />
-          </li>
-          <li className=" rounded-3xl">
-            <Image
-              src={CSAImg}
-              width={400}
-              height={300}
-              className=" rounded-3xl  lg:h-full lg:w-80 h-80 w-60"
-            />
-          </li>
-          <li className=" rounded-3xl">
-            <Image
-              src={TrophyImg}
-              width={400}
-              height={300}
-              className=" rounded-3xl  lg:h-90 lg:w-80 h-80 w-60"
-            />
-          </li>
-          {/* <li className=" rounded-3xl">
-            <Image
-              src={Placeholder}
-              width={400}
-              height={300}
-              className=" rounded-3xl  lg:h-full lg:w-80 h-80 w-60"
-            />
-          </li>
-          <li className=" rounded-3xl">
-            <Image
-              src={Placeholder}
-              width={400}
-              height={300}
-              className=" rounded-3xl  lg:h-full lg:w-80 h-80 w-60"
-            />
-          </li>
-          <li className=" rounded-3xl">
-            <Image
-              src={Placeholder}
-              width={400}
-              height={300}
-              className=" rounded-3xl  lg:h-full lg:w-80 h-80 w-60"
-            />
-          </li>
-          <li className=" rounded-3xl">
-            <Image
-              src={Placeholder}
-              width={400}
-              height={300}
-              className=" rounded-3xl  lg:h-full lg:w-80 h-80 w-60"
-            />
-          </li> */}
-        </ul>
-      </div>
+  x-data="{}"
+  x-init="$nextTick(() => {
+    let ul = $refs.logos;
+    ul.insertAdjacentHTML('afterend', ul.outerHTML);
+    ul.nextSibling.setAttribute('aria-hidden', 'true');
+  })"
+  className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+>
+  <ul
+    x-ref="logos"
+    className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll h-[500px]"
+  >
+    <li className="rounded-3xl flex-shrink-0">
+      <Image
+        src={DeepTechImg}
+        width={400}
+        height={300}
+        className="rounded-3xl w-60 h-auto max-w-full lg:w-80 lg:h-auto"
+      />
+    </li>
+    <li className="rounded-3xl flex-shrink-0">
+      <Image
+        src={FidoImg}
+        width={400}
+        height={300}
+        className="rounded-3xl w-60 h-auto max-w-full lg:w-80 lg:h-auto"
+      />
+    </li>
+    <li className="rounded-3xl flex-shrink-0">
+      <Image
+        src={CSAImg}
+        width={400}
+        height={300}
+        className="rounded-3xl w-60 h-auto max-w-full lg:w-80 lg:h-auto"
+      />
+    </li>
+    <li className="rounded-3xl flex-shrink-0">
+      <Image
+        src={TrophyImg}
+        width={400}
+        height={300}
+        className=" rounded-3xl  lg:h-90 lg:w-80 h-80 w-60"
+      />
+    </li>
+  </ul>
+</div>
 
       <div className="md:h-screen rounded-lg flex flex-col gap-6 justify-center items-center">
         <div className='flex flex-col justify-center items-center gap-3'>
