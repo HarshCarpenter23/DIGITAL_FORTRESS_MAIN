@@ -1,0 +1,20 @@
+@keyframes bounceIn {
+    0% { opacity: 1; } /* Start with full opacity */
+    50% { opacity: 0; } /* Fade out at 50% of the animation */
+    100% { opacity: 1; } 
+}
+
+#fingerprint {
+    animation: bounceIn 3s linear infinite;
+    animation-delay: 0.1s;
+  }
+
+svg {
+    width: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+    svg {
+        width: 300px;
+    }
+  }
